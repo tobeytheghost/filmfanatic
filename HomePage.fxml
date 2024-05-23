@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="800.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePageController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="titleLabel" text="FilmFanatic">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="700.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="welcomeLabel" text="WELCOME!">
+               <font>
+                  <Font name="SansSerif Bold" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="300.0" top="100.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="instructionLabel" text="To get started choose an option:">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="225.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Button fx:id="watchlistButton" alignment="CENTER" mnemonicParsing="false" onAction="#openWatchlistPage" style="-fx-background-color: BLACK;" text="Watchlist" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="325.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="watchedMovieButton" mnemonicParsing="false" onAction="#openWatchedMoviesPage" style="-fx-background-color: BLACK;" text="Watched Movies" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="285.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            
+         </children>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WatchedMoviesController">
+   <children>
+      <VBox prefHeight="627.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButtonClicked" text="Back">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="watchedMovieLabel" text="Watched Movies">
+               <font>
+                  <Font name="SansSerif Regular" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="280.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="filterButton" mnemonicParsing="false" onAction="#openFilterOptions" text="Filter">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="700.0" />
+               </VBox.margin>
+            </Button>
+            
+            <TableView fx:id="watchedmoviesTableView" editable="true" prefHeight="382.0" prefWidth="800.0">
+              <columns>
+                <TableColumn fx:id="titleCol" prefWidth="251.19998013973236" text="Title" />
+                <TableColumn fx:id="genreCol" prefWidth="210.4000244140625" text="Genre" />
+                  <TableColumn fx:id="ratingCol" minWidth="0.0" prefWidth="134.39993286132812" text="Rating" />
+                  <TableColumn fx:id="platformCol" minWidth="0.0" prefWidth="204.0" text="Platform" />
+              </columns>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Button fx:id="addMovieButton" mnemonicParsing="false" onAction="#addMovieButtonClicked" style="-fx-background-color: BLACK;" text="Add Movie" textFill="WHITE">
+                   <font>
+                      <Font name="SansSerif Regular" size="14.0" />
+                   </font>
+                </Button>
+                <Button fx:id="removeMovieButton" text="Remove Movie" onAction="#removeMovieButtonClicked" style="-fx-background-color: BLACK;" textFill="WHITE">
+                <font>
+                      <Font name="SansSerif Regular" size="14.0" />
+                   </font>
+                   </Button>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

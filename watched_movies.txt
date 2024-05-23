@@ -1,0 +1,4 @@
+Barbie,Comedy,Cineplex,5.0
+The Dark Knight,Action,Crave,5.0
+Get Out,Thriller,Crave,5.0
+The Conjuring,Horror,Netflix,4.7

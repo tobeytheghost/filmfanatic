@@ -1,0 +1,3 @@
+Barbie,Comedy,Cineplex,5.0
+The Dark Knight,Action,Crave,5.0
+Batman,Action,HBO,180.0
